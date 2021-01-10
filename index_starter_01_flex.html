@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter Company</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <section class="container header">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <a href="#" class="logo">LOGO</a>
+            <ul class="main-nav" id="js-menu">
+                <li> <a href="#" class="nav-links">Home</a> </li>
+                <!--                <li> <a href="#" class="nav-links">Produkte</a> </li>-->
+                <li> <a href="#" class="nav-links">Über uns</a> </li>
+                <li> <a href="#" class="nav-links">Kontakt</a> </li>
+            </ul>
+        </nav>
+
+    </section>
+    <section class="bg-light text-center hero">
+        <div class="container container--narrow">
+            <p>Sie brauchen eine Webseite!</p>
+            <h1>Machen Sie den Anfang mit unserem Starter-Set.</h1>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="text-center">Die eigene Webseite, heutzutage ein Muss</h2>
+            <div class="split einfuehrung">
+                <div>
+                    <p>Jeder, der im Internet gefunden werden will benötigt eine Webseite. <br>
+                        Einfach, gut und günstig ist dies mit unserem Starter-Set möglich. Mit dem Startet-Set teilen Sie der Welt mit, da&szlig; es Sie gibt. Hier werden Sie gefunden</p>
+                </div>
+                <div>
+                    <p>Ein sehr bekanntes Buch aus der Online-Marketing-Branche trägt den Titel “Web oder stirb!”.<br><br>
+                        Seien Sie also dabei.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark">
+        <div class="container">
+            <div class="split">
+
+                <div>
+                    <h2>Ist meine neue Seite responsiv?</h2>
+                    <p>Ja, unsere Webseiten sind so eingerichtet um auf allen Endgeräten gut auszusehen. Egal ob auf dem Desktop, Tablett oder Smartphone.</p>
+                </div>
+                <div>
+                    <img src="img/image-01.jpg" alt="man standing on mountain edge looking at sunset">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary">
+        <div class="container">
+            <div class="split">
+                <div>
+                    <img src="img/image-02.jpg" alt="foggy mountains with sun setting behind them">
+                </div>
+                <div>
+                    <h2>Mit Sorgfalt erstellt</h2>
+                    <p>Die Farben werden nach Ihren Wünschen angepasst. Die jeweiligen Berreiche werden mit den von Ihnen gewünschten Bildern und Inhalte gefüllt.<br>
+                        Auch andere Anpassungen können vorgenommen werden um so die Weibseite nach Ihren wünschen zu erweitern.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light">
+        <div class="container">
+            <div class="split footer">
+
+                <div>
+                    <h3>Impressum</h3>
+                    <p>
+                        Angela Mustermann <br>
+                        Willy-Brandt-Stra&szlig;e 1<br>
+                        10557 Berlin</p>
+                </div>
+                <div>
+                    <h3>Kontakt</h3>
+                    <p>
+                        Tel.: +49 (0) 30 - 182 72 27<br>
+                        info@meineneuewebseite.de<br>
+                        www.meineneuewebseite.de
+                    </p>
+                </div>
+                <div>
+                    <h3>Sociale Medien</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let mainNav = document.getElementById("js-menu");
+        let navBarToggle = document.getElementById("js-navbar-toggle");
+
+        navBarToggle.addEventListener("click", function() {
+            mainNav.classList.toggle("active");
+        });
+
+    </script>
+</body>
+
+</html>

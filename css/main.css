@@ -1,0 +1,357 @@
+:root {
+    --clr-primary-200: #f3eed9;
+    --clr-primary-400: #812c2c;
+
+    --clr-neutral-100: #fff;
+    --clr-neutral-900: #222c2a;
+
+    --ff-primary: 'Montserrat', sans-serif;
+    --ff-accent: 'Roboto', sans-serif;
+}
+
+/* === MINI RESET === */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul,
+ol {
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+/*elements with a class attribute  */
+ol[class],
+/*elements with a class attribute  */
+li,
+blockquote {
+    margin: 0;
+}
+
+/* Set core body defaults */
+body {
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* === MINI RESET END === */
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 1rem;
+
+}
+
+h1,
+h2,
+h3 {
+    color: var(--clr-primary-400);
+    font-family: var(--ff-accent);
+    font-weight: 700;
+    line-height: 1;
+}
+
+h2,
+h3,
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 4rem;
+    /*    text-transform: uppercase;*/
+    hyphens: auto;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+section {
+    padding: 4rem 0;
+
+}
+
+section.header {
+    position: relative;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: min(90%, 70.5rem);
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container--narrow {
+    max-width: 50rem;
+}
+
+.bg-light {
+    background-color: var(--clr-primary-200);
+    position: relative;
+}
+
+.bg-primary {
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-primary-400);
+    position: relative;
+    overflow: hidden;
+}
+
+/* ------------------- */
+/* SKEW with Border*/
+
+section.bg-primary::after {
+    content: "";
+    display: block;
+    border-bottom: 5vw solid var(--clr-primary-200);
+    border-left: 100vw solid transparent;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* ------------------- */
+/* ARROW with SHAPES*/
+
+section.bg-light.hero::after,
+section.bg-light.hero::before {
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 50px;
+    background: var(--clr-primary-200);
+    bottom: -1em;
+    z-index: 100;
+}
+
+section.bg-light.hero::before {
+    right: 50%;
+    transform: skew(0, 20deg)
+}
+
+section.bg-light.hero::after {
+    left: 50%;
+    transform: skew(0, -20deg)
+}
+
+
+.bg-dark {
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-neutral-900);
+}
+
+.bg-primary h2,
+.bg-dark h2 {
+    color: var(--clr-primary-200);
+}
+
+.footer li {
+    display: inline-block;
+}
+
+.footer a {
+    color: var(--clr-neutral-900);
+}
+
+.footer .fab {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
+
+/* === NAVIGATION === */
+
+.navbar {
+    font-size: 1.25rem;
+    padding-bottom: 10px;
+
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.navbar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    padding: .5rem 0 .5rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar li:hover {
+    background-color: var(--clr-primary-400);
+    color: var(--clr-primary-200)
+}
+
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.logo {
+    display: inline-block;
+    font-size: 2rem;
+
+}
+
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.active {
+    display: block;
+}
+
+/* === NAVIGATION END === */
+
+
+/* === === === ===  === */
+/*    MEDIA QUERIES     */
+/* === === === ===  === */
+
+@media (min-width: 45em) {
+
+    section {
+        padding: 7rem 0;
+    }
+
+    section.header {
+        padding: 0;
+    }
+
+    .split {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .split.einfuehrung,
+    .split.footer {
+        align-items: flex-start;
+    }
+
+    .split > * {
+        flex-basis: 100%;
+    }
+
+    .split > * + * {
+        margin-left: 2em;
+    }
+
+    /* === NAVIGATION === */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 5rem;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .navbar li {
+        padding: 0;
+        border-bottom: 0;
+    }
+
+    .navbar li:hover {
+        background-color: unset;
+        color: unset;
+    }
+
+    .nav-links {
+        margin-left: 2rem;
+        padding: 2rem 0 2rem 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+
+    .nav-links:after {
+        margin-left: 2rem;
+        display: block;
+        content: '';
+        border-bottom: 3px solid var(--clr-primary-400);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 250ms ease-in-out;
+    }
+
+    .nav-links:hover:after {
+        transform: scaleX(1);
+
+    }
+
+    /* === NAVIGATION END === */
+
+}
