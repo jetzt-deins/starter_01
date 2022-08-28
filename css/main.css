@@ -265,7 +265,6 @@ section.bg-light.hero::after {
 
 .active {
     display: block;
-    margin-top: 20px;
 }
 
 /* === NAVIGATION END === */
@@ -318,6 +317,9 @@ section.bg-light.hero::after {
         justify-content: flex-end;
     }
 
+    .navbar ul {
+        margin-top: 20px;
+    }
     .navbar li {
         padding: 0;
         border-bottom: 0;
