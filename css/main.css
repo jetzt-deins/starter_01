@@ -265,7 +265,6 @@ section.bg-light.hero::after {
 
 .active {
     display: block;
-    margin-top: 20px;
 }
 
 /* === NAVIGATION END === */
