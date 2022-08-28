@@ -5,5 +5,4 @@ let icon = document.getElementsByClassName("fa-bars")[0];
 navBarToggle.addEventListener("click", function () {
   mainNav.classList.toggle("active");
   icon.classList.toggle("fa-times");
-  
 });

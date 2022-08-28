@@ -64,7 +64,7 @@ img {
 }
 
 /* Natural flow and rhythm in articles by default */
-article > * + * {
+article>*+* {
     margin-top: 1em;
 }
 
@@ -211,7 +211,6 @@ section.bg-light.hero::after {
     padding-right: 1rem;
 }
 
-
 /* === NAVIGATION === */
 
 .navbar {
@@ -294,11 +293,11 @@ section.bg-light.hero::after {
         align-items: flex-start;
     }
 
-    .split > * {
+    .split>* {
         flex-basis: 100%;
     }
 
-    .split > * + * {
+    .split>*+* {
         margin-left: 2em;
     }
 
