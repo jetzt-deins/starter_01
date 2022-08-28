@@ -4,6 +4,6 @@
 
       navBarToggle.addEventListener("click", function () {
         mainNav.classList.toggle("active");
-        icon.className = icon.className.replace("fa-bars", "fa-plus");
+        icon.className.replace("fa-bars", "fa-plus");
 
       });
