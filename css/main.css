@@ -315,6 +315,7 @@ section.bg-light.hero::after {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        margin-top: 50px;
     }
 
     .navbar li {
