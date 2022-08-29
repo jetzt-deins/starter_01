@@ -267,6 +267,10 @@ section.bg-light.hero::after {
     font-size: 1.5rem;
 }
 
+.social .fab:hover {
+    color: var(--clr-primary-400);
+}
+
 .active {
     display: block;
 }
