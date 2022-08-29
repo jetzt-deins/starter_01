@@ -64,7 +64,7 @@ img {
 }
 
 /* Natural flow and rhythm in articles by default */
-article>*+* {
+article > * + * {
     margin-top: 1em;
 }
 
@@ -234,6 +234,11 @@ section.bg-light.hero::after {
     border-bottom: 1px solid #ccc;
 }
 
+.navbar li:last-child {
+    border-bottom: none;
+}
+
+
 .navbar li:hover {
     background-color: var(--clr-primary-400);
     color: var(--clr-primary-200)
@@ -293,11 +298,11 @@ section.bg-light.hero::after {
         align-items: flex-start;
     }
 
-    .split>* {
+    .split > * {
         flex-basis: 100%;
     }
 
-    .split>*+* {
+    .split > * + * {
         margin-left: 2em;
     }
 
@@ -320,6 +325,7 @@ section.bg-light.hero::after {
         padding: 0;
         border-bottom: 0;
     }
+
 
     .navbar li:hover {
         background-color: unset;
